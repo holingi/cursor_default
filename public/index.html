@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Task Manager</h1>
+      <p class="subtitle">A simple example project for Cloud Agents</p>
+    </header>
+
+    <form id="task-form">
+      <input
+        type="text"
+        id="task-input"
+        placeholder="What needs to be done?"
+        autocomplete="off"
+        required
+      />
+      <button type="submit">Add</button>
+    </form>
+
+    <div id="stats" class="stats"></div>
+
+    <ul id="task-list"></ul>
+
+    <p id="empty-state" class="empty">No tasks yet — add one above!</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
