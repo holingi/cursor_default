@@ -2,15 +2,19 @@
 
 ## Cursor Cloud specific instructions
 
-This repository is currently a minimal placeholder with no application code, build system, or dependencies.
+This is a **Task Manager** example project (Node.js + Express + vanilla frontend). See `README.md` for full details.
 
-### Repository contents
+### Quick reference
 
-- `test` — a single text file (`this is test`)
-- No source code, package manager config, or service definitions exist
+| Action | Command |
+|--------|---------|
+| Install deps | `npm install` |
+| Dev server | `npm run dev` (port 3000, auto-restarts on save) |
+| Lint | `npm run lint` |
+| Tests | `npm test` (Vitest + Supertest, 15 tests) |
 
-### Development notes
+### Notes
 
-- No build, lint, or test commands are available
-- No services need to be started
-- When application code is added in the future, update this file with setup, build, lint, test, and run instructions
+- The backend uses in-memory storage — data resets on server restart
+- `npm run dev` uses Node's built-in `--watch` flag (no extra tooling needed)
+- The frontend is served as static files from `public/`; no build step is required
