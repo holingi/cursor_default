@@ -1,0 +1,84 @@
+# Eve
+# 記錄學業與筆記。內文用繁體中文，沒有英文切換。
+
+title: Eve
+subtitle: 記錄學業與筆記
+description: 這個網站記錄學業與筆記。
+author: Eve
+language: zh-tw
+timezone: Asia/Taipei
+
+# 本地預覽用這個網址。部署到 GitHub Pages 前再改成正式網址。
+# 個人站：url 為 https://帳號.github.io ，root 為 /
+# 專案站：url 為 https://帳號.github.io/倉庫名 ，root 為 /倉庫名/
+url: http://localhost:4000
+root: /
+permalink: :title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true
+  trailing_html: true
+
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+new_post_name: :title.md
+default_layout: post
+titlecase: false
+external_link:
+  enable: true
+  field: site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+syntax_highlighter: highlight.js
+highlight:
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+default_category: uncategorized
+category_map:
+tag_map:
+
+meta_generator: true
+
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: date
+
+per_page: 10
+pagination_dir: page
+
+include:
+exclude:
+ignore:
+
+theme: tranquilpeak
+
+# 還沒有要發布。填好 repo 之後才執行 npm run deploy。
+deploy:
+  type: git
+  repo:
+  branch: gh-pages
+  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
