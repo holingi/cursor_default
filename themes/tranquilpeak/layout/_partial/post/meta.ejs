@@ -1,0 +1,7 @@
+<div class="<%= (classes ? classes.join(' ') : '') %>">
+    <%- time_tag(post.date, __('date_format')) %>
+    <% if ((post.categories) && (post.categories.length > 0)) { %>
+        <span><%= __('post.categorized_in') %> </span>
+        <%- partial('category', {categories: post.categories})%>
+    <% } %>
+</div>

@@ -1,0 +1,5 @@
+.sass-cache
+node_modules
+.DS_Store
+# source/assets is the compiled theme. Keep it in git so `hexo generate`
+# does not need node-sass or a theme rebuild.
